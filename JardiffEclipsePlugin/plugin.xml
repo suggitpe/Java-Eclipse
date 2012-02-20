@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   
+   <extension point="org.eclipse.ui.actionSets">
+      <actionSet label="Jardiff Actions" visible="true" id="JardiffPlugin.actionSet">
+         <menu label="Jardiff" id="jardiffMenu">
+            <separator name="jardiffGroup"/>
+         </menu>
+         <action 
+                class="org.suggs.eclipse.jardiff.actions.DiffJarsActionDelegate" 
+                icon="icons/sample.gif"
+                id="org.suggs.eclipse.jardiff.actions.DiffJarsActionDelegate"
+                label="Diff JAR APIs" 
+                menubarPath="jardiffMenu/jardiffGroup" 
+                toolbarPath="jardiffGroup"
+                tooltip="Perform a diff on two jars" >
+         </action>
+      </actionSet>
+   </extension>
+   
+   <extension point="org.eclipse.ui.popupMenus">
+        <objectContribution id="JardiffPlugin.contribution1"
+            objectClass="org.eclipse.core.runtime.IAdaptable">
+            <menu id="JardiffPlugin.menu1" label="Jar Diff"
+                path="additions">
+                <separator name="group1"></separator>
+            </menu>
+            <action
+                class="org.suggs.eclipse.jardiff.actions.DiffJarsActionDelegate"
+                enablesFor="1" id="JardiffPlugin.DiffJarsActionDelegate"
+                label="Diff Jars"
+                menubarPath="JardiffPlugin.menu1/group1">
+            </action>
+        </objectContribution>
+    </extension>
+
+</plugin>

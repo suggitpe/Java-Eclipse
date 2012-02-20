@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Sandbox Test Eclipse Plugin
+Bundle-SymbolicName: com.suggs.eclipse.scribbler;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.suggs.sandbox_eclipse.testplugin.TestEclipsePlugin
+Bundle-Vendor: Peter Suggitt
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.help,
+ org.eclipse.core.resources,
+ org.eclipse.ui.forms,
+ org.eclipse.compare,
+ org.eclipse.ui.ide
+Export-Package: org.suggs.sandbox_eclipse.testplugin,
+ org.suggs.sandbox_eclipse.testplugin.actions,
+ org.suggs.sandbox_eclipse.testplugin.dialogs,
+ org.suggs.sandbox_eclipse.testplugin.fsmgeneration
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

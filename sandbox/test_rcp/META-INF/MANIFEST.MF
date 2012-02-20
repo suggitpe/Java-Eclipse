@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TestRCP Plugin
+Bundle-SymbolicName: org.suggs.sandbox_eclipse.test_rcp; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: Peter Suggitt
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui
